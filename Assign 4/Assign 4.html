@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function ()
+{
+	var chart = new CanvasJS.Chart("chartContainer",{
+	title:{
+			text: "Runs - per over",
+			xLabel: 'Overs', 
+            yLabel: 'Runs',
+		  },
+	
+	data:[
+		 {
+			type: "line",
+			dataPoints:[
+						{x: 5, y: 40},
+						{x: 10, y:75},
+						{x: 15, y:140}
+					   ]
+	     }]
+
+});
+chart.render();
+}
+</script>
+<script type="text/javascript"
+src="https://canvasjs.com/assets/script/canvasjs.min.js">
+</script>
+</head>
+<body>
+<div id="chartContainer" style="width="300px" height="300px" border:1px solid black">
+</div>
+</body>
+</html>
